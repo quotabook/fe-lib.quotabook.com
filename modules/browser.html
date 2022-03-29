@@ -91,13 +91,16 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="browser.html#getCookie" class="tsd-kind-icon">get<wbr>Cookie</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="browser.html#getCookies" class="tsd-kind-icon">get<wbr>Cookies</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="browser.html#getLocalStorageItem" class="tsd-kind-icon">get<wbr>Local<wbr>Storage<wbr>Item</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="browser.html#getScrollYOffset" class="tsd-kind-icon">get<wbr>ScrollYOffset</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="browser.html#isClipboardCommandSupported" class="tsd-kind-icon">is<wbr>Clipboard<wbr>Command<wbr>Supported</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="browser.html#isClipboardSupported" class="tsd-kind-icon">is<wbr>Clipboard<wbr>Supported</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="browser.html#loadScript" class="tsd-kind-icon">load<wbr>Script</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="browser.html#popLocalStorageItem" class="tsd-kind-icon">pop<wbr>Local<wbr>Storage<wbr>Item</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="browser.html#removeLocalStorageItem" class="tsd-kind-icon">remove<wbr>Local<wbr>Storage<wbr>Item</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="browser.html#safeScrollTo" class="tsd-kind-icon">safe<wbr>Scroll<wbr>To</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="browser.html#setCookie" class="tsd-kind-icon">set<wbr>Cookie</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="browser.html#setLocalStorageItem" class="tsd-kind-icon">set<wbr>Local<wbr>Storage<wbr>Item</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="browser.html#smoothScrollTo" class="tsd-kind-icon">smooth<wbr>Scroll<wbr>To</a></li>
 							</ul>
 						</section>
 					</div>
@@ -382,6 +385,28 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getScrollYOffset" class="tsd-anchor"></a>
+					<h3>get<wbr>ScrollYOffset</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>ScrollYOffset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/quotabook/quotalab-frontend-libraries/blob/main/packages/browser/src/getScrollYOffset/index.ts#L6">browser/src/getScrollYOffset/index.ts:6</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>현재 스크롤 위치를 구합니다. 내부적으로 getBoundingClientRect를 사용하기 때문에 불필요한 Reflow가 발생할 수 있습니다.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="isClipboardCommandSupported" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Clipboard<wbr>Command<wbr>Supported</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -516,6 +541,48 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="safeScrollTo" class="tsd-anchor"></a>
+					<h3>safe<wbr>Scroll<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">safe<wbr>Scroll<wbr>To<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Window</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ScrollToOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/quotabook/quotalab-frontend-libraries/blob/main/packages/browser/src/scrollTo/index.ts#L8">browser/src/scrollTo/index.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>IE, 구형 안드로이드에선 element.scrollTo 함수가 없는 브라우저에서도 안전하게 스크롤 하기 위한 함수입니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>link</dt>
+									<dd><p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo">https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo</a></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Window</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>스크롤할 요소</p>
+									</div>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-type">ScrollToOptions</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>스크롤 옵션</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<a name="setCookie" class="tsd-anchor"></a>
 					<h3>set<wbr>Cookie</h3>
@@ -603,6 +670,45 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="smoothScrollTo" class="tsd-anchor"></a>
+					<h3>smooth<wbr>Scroll<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">smooth<wbr>Scroll<wbr>To<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Window</span>, scrollTo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>top<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ScrollConfig</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/quotabook/quotalab-frontend-libraries/blob/main/packages/browser/src/scrollTo/index.ts#L39">browser/src/scrollTo/index.ts:39</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>safeScrollTo 함수와 requestAnimationFrame을 사용하여 원하는 지점까지 부드럽게 스크롤링을 합니다.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Window</span></h5>
+								</li>
+								<li>
+									<h5>scrollTo: <span class="tsd-signature-symbol">{ </span>top<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>top<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>config: <span class="tsd-signature-type">ScrollConfig</span><span class="tsd-signature-symbol"> = ...</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -649,6 +755,9 @@
 						<a href="browser.html#getLocalStorageItem" class="tsd-kind-icon">get<wbr>Local<wbr>Storage<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="browser.html#getScrollYOffset" class="tsd-kind-icon">get<wbr>ScrollYOffset</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="browser.html#isClipboardCommandSupported" class="tsd-kind-icon">is<wbr>Clipboard<wbr>Command<wbr>Supported</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
@@ -663,11 +772,17 @@
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="browser.html#removeLocalStorageItem" class="tsd-kind-icon">remove<wbr>Local<wbr>Storage<wbr>Item</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="browser.html#safeScrollTo" class="tsd-kind-icon">safe<wbr>Scroll<wbr>To</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="browser.html#setCookie" class="tsd-kind-icon">set<wbr>Cookie</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="browser.html#setLocalStorageItem" class="tsd-kind-icon">set<wbr>Local<wbr>Storage<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="browser.html#smoothScrollTo" class="tsd-kind-icon">smooth<wbr>Scroll<wbr>To</a>
 					</li>
 				</ul>
 			</nav>
