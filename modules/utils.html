@@ -142,6 +142,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="utils.html#isString" class="tsd-kind-icon">is<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="utils.html#isTypedArray" class="tsd-kind-icon">is<wbr>Typed<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="utils.html#lowerFirstLetter" class="tsd-kind-icon">lower<wbr>First<wbr>Letter</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="utils.html#omit" class="tsd-kind-icon">omit</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="utils.html#parscalCase" class="tsd-kind-icon">parscal<wbr>Case</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="utils.html#parseQueryString" class="tsd-kind-icon">parse<wbr>Query<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="utils.html#pick" class="tsd-kind-icon">pick</a></li>
@@ -2560,6 +2561,46 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="omit" class="tsd-anchor"></a>
+					<h3>omit</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">omit&lt;T, K&gt;<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, keys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/quotabook/quotalab-frontend-libraries/blob/main/packages/utils/src/omit/index.ts#L6">packages/utils/src/omit/index.ts:6</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>객체를 받아 원하는 키를 제외한 새로운 객체를 반환합니다.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+								<li>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <span class="tsd-signature-type">T</span></h5>
+								</li>
+								<li>
+									<h5>keys: <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="parscalCase" class="tsd-anchor"></a>
 					<h3>parscal<wbr>Case</h3>
@@ -2649,7 +2690,7 @@
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>pick object 중에서 원하는 키 값으로 선택한 키로 이루어져있는 개체를 만드는 함수</p>
+									<p>객체를 받아 원하는 키만으로 이루어져있는 새로운 객체를 만드는 함수</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
@@ -3598,6 +3639,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="utils.html#lowerFirstLetter" class="tsd-kind-icon">lower<wbr>First<wbr>Letter</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="utils.html#omit" class="tsd-kind-icon">omit</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="utils.html#parscalCase" class="tsd-kind-icon">parscal<wbr>Case</a>
