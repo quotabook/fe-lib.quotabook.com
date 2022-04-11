@@ -83,6 +83,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="antd.html#FormItem" class="tsd-kind-icon">Form<wbr>Item</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="antd.html#SquareSkeleton" class="tsd-kind-icon">Square<wbr>Skeleton</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="antd.html#closeNotification" class="tsd-kind-icon">close<wbr>Notification</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="antd.html#openConfirm" class="tsd-kind-icon">open<wbr>Confirm</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="antd.html#openNotification" class="tsd-kind-icon">open<wbr>Notification</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="antd.html#useForm" class="tsd-kind-icon">use<wbr>Form</a></li>
 							</ul>
@@ -398,6 +399,48 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="openConfirm" class="tsd-anchor"></a>
+					<h3>open<wbr>Confirm</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">open<wbr>Confirm<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/quotabook/quotalab-frontend-libraries/blob/main/packages/antd/src/utils/modals.ts#L23">packages/antd/src/utils/modals.ts:23</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Antd의 confirm 함수를 프로미스를 사용하여 컨트롤합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">openConfirm</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">title:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;베스팅을 일시 정지하시겠어요?&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">content:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;나중에 재시작하실 수 있어요&#039;</span>
+<span style="color: #000000">});</span>
+
+<span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">result</span><span style="color: #000000"> === </span><span style="color: #0000FF">true</span><span style="color: #000000">) {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">pauseRsuVesting</span><span style="color: #000000">();</span>
+<span style="color: #000000">  </span><span style="color: #795E26">openNotification</span><span style="color: #000000">({ </span><span style="color: #001080">message:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;베스팅이 일시정지 되었어요&#039;</span><span style="color: #000000"> });</span>
+<span style="color: #000000">}</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <span class="tsd-signature-type">Options</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="openNotification" class="tsd-anchor"></a>
 					<h3>open<wbr>Notification</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -504,6 +547,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="antd.html#closeNotification" class="tsd-kind-icon">close<wbr>Notification</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="antd.html#openConfirm" class="tsd-kind-icon">open<wbr>Confirm</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="antd.html#openNotification" class="tsd-kind-icon">open<wbr>Notification</a>
