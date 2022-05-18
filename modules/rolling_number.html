@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>react-query | 쿼타랩 라이브러리 문서</title>
+	<title>rolling-number | 쿼타랩 라이브러리 문서</title>
 	<meta name="description" content="Documentation for 쿼타랩 라이브러리 문서">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">쿼타랩 라이브러리 문서</a>
 				</li>
 				<li>
-					<a href="react_query.html">react-query</a>
+					<a href="rolling_number.html">rolling-number</a>
 				</li>
 			</ul>
-			<h1>Module react-query</h1>
+			<h1>Module rolling-number</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="react_query.html#useQueryOnce" class="tsd-kind-icon">use<wbr>Query<wbr>Once</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="rolling_number.html#RollingNumber" class="tsd-kind-icon">Rolling<wbr>Number</a></li>
 							</ul>
 						</section>
 					</div>
@@ -80,60 +80,49 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-					<a name="useQueryOnce" class="tsd-anchor"></a>
-					<h3>use<wbr>Query<wbr>Once</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">use<wbr>Query<wbr>Once&lt;TQueryFnData, TError, TData, TQueryKey&gt;<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TQueryKey</span>, queryFn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QueryFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">UseQueryOnceOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TError</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UseQueryResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TError</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="RollingNumber" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Rolling<wbr>Number</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">Rolling<wbr>Number<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Props</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/quotabook/quotalab-frontend-libraries/blob/main/packages/react-query/src/hooks/useQueryOnce.ts#L28">packages/react-query/src/hooks/useQueryOnce.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/quotabook/quotalab-frontend-libraries/blob/main/packages/rolling-number/src/components/RollingNumber.tsx#L44">packages/rolling-number/src/components/RollingNumber.tsx:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Stale While Revalidate 정책을 사용하지 않고, 최초 렌더링 한번만 쿼리를 실행합니다. 이후 재호출을 원하시면 refetch 함수를 사용해주세요.</p>
+									<p>입력된 숫자가 롤링 애니메이션으로 나타나는 컴포넌트입니다.</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><p>const { data, refetch } = useQueryOnce(&#39;foo&#39;, fetchFoo);</p>
-										<p>const reload = () =&gt; {
-											refetch();
-										}</p>
+									<dd><pre><code class="language-tsx"><span style="color: #800000">&lt;</span><span style="color: #267F99">RollingNumber</span><span style="color: #000000"> </span><span style="color: #FF0000">number</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">1234</span><span style="color: #0000FF">}</span><span style="color: #000000"> </span><span style="color: #800000">/&gt;</span>
+
+<span style="color: #008000">// QDS의 Txt 컴포넌트와 조합하여 사용할 수도 있습니다.</span>
+<span style="color: #800000">&lt;</span><span style="color: #267F99">RollingNumber</span>
+<span style="color: #000000">  </span><span style="color: #FF0000">number</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">10000000</span><span style="color: #0000FF">}</span>
+<span style="color: #000000">  </span><span style="color: #FF0000">height</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">24</span><span style="color: #0000FF">}</span>
+<span style="color: #000000">  </span><span style="color: #FF0000">formatter</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #000000FF">(</span><span style="color: #001080">digit</span><span style="color: #000000FF">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000FF"> (</span>
+<span style="color: #000000FF">    </span><span style="color: #800000">&lt;</span><span style="color: #267F99">Txt</span><span style="color: #000000FF"> </span><span style="color: #FF0000">size</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">24</span><span style="color: #0000FF">}</span><span style="color: #000000FF"> </span><span style="color: #FF0000">weight</span><span style="color: #000000">=</span><span style="color: #A31515">&quot;bold&quot;</span><span style="color: #800000">&gt;</span>
+<span style="color: #000000FF">      </span><span style="color: #0000FF">{</span><span style="color: #001080">digit</span><span style="color: #0000FF">}</span>
+<span style="color: #000000FF">    </span><span style="color: #800000">&lt;/</span><span style="color: #267F99">Txt</span><span style="color: #800000">&gt;</span>
+<span style="color: #000000FF">  )</span><span style="color: #0000FF">}</span>
+<span style="color: #000000">  </span><span style="color: #FF0000">duration</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">0.8</span><span style="color: #0000FF">}</span>
+<span style="color: #800000">/&gt;</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>TQueryFnData = <span class="tsd-signature-type">unknown</span></h4>
-								</li>
-								<li>
-									<h4>TError = <span class="tsd-signature-type">unknown</span></h4>
-								</li>
-								<li>
-									<h4>TData = <span class="tsd-signature-type">TQueryFnData</span></h4>
-								</li>
-								<li>
-									<h4>TQueryKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QueryKey</span> = <span class="tsd-signature-type">QueryKey</span></h4>
-								</li>
-							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>key: <span class="tsd-signature-type">TQueryKey</span></h5>
-								</li>
-								<li>
-									<h5>queryFn: <span class="tsd-signature-type">QueryFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">UseQueryOnceOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TError</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>__namedParameters: <span class="tsd-signature-type">Props</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">UseQueryResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TError</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -157,10 +146,10 @@
 					<li class=" tsd-kind-module">
 						<a href="react.html">react</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="react_query.html">react-<wbr>query</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="rolling_number.html">rolling-<wbr>number</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -173,8 +162,8 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="react_query.html#useQueryOnce" class="tsd-kind-icon">use<wbr>Query<wbr>Once</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="rolling_number.html#RollingNumber" class="tsd-kind-icon">Rolling<wbr>Number</a>
 					</li>
 				</ul>
 			</nav>
