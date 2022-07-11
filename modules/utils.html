@@ -2871,7 +2871,7 @@
 					<a name="mapValues" class="tsd-anchor"></a>
 					<h3>map<wbr>Values</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">map<wbr>Values&lt;T&gt;<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, iterate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span>, object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{</span><span class="tsd-signature-symbol">[ </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> in </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">map<wbr>Values&lt;T, V&gt;<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, iterate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span>, object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{</span><span class="tsd-signature-symbol">[ </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> in </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -2902,6 +2902,9 @@
 								<li>
 									<h4>T</h4>
 								</li>
+								<li>
+									<h4>V = <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span></h4>
+								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -2909,11 +2912,11 @@
 									<h5>object: <span class="tsd-signature-type">T</span></h5>
 								</li>
 								<li>
-									<h5>iterate: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span>, object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<h5>iterate: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span>, object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">V</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span>, object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span>, object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
@@ -2929,14 +2932,14 @@
 															<h5>object: <span class="tsd-signature-type">T</span></h5>
 														</li>
 													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">V</span></h4>
 												</li>
 											</ul>
 										</li>
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{</span><span class="tsd-signature-symbol">[ </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> in </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{</span><span class="tsd-signature-symbol">[ </span><span class="tsd-signature-type">key</span><span class="tsd-signature-symbol"> in </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> }</span></h4>
 						</li>
 					</ul>
 				</section>
