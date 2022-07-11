@@ -121,6 +121,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="utils.html#generateUUID" class="tsd-kind-icon">generateUUID</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="utils.html#getArrayFromCount" class="tsd-kind-icon">get<wbr>Array<wbr>From<wbr>Count</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="utils.html#getObjectKeys" class="tsd-kind-icon">get<wbr>Object<wbr>Keys</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="utils.html#getObjectValues" class="tsd-kind-icon">get<wbr>Object<wbr>Values</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="utils.html#groupBy" class="tsd-kind-icon">group<wbr>By</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="utils.html#identify" class="tsd-kind-icon">identify</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="utils.html#iif" class="tsd-kind-icon">iif</a></li>
@@ -1618,6 +1619,40 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="getObjectValues" class="tsd-anchor"></a>
+					<h3>get<wbr>Object<wbr>Values</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Object<wbr>Values&lt;T&gt;<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/quotabook/quotalab-frontend-libraries/blob/main/packages/utils/src/getObjectValues/index.ts#L4">packages/utils/src/getObjectValues/index.ts:4</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>객체의 값들의 타입이 아닌 any을 반환하는 Object.values 대신 사용할 수 있는 Type Safe한 함수입니다</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -4185,6 +4220,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="utils.html#getObjectKeys" class="tsd-kind-icon">get<wbr>Object<wbr>Keys</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="utils.html#getObjectValues" class="tsd-kind-icon">get<wbr>Object<wbr>Values</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="utils.html#groupBy" class="tsd-kind-icon">group<wbr>By</a>
