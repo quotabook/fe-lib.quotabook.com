@@ -73,6 +73,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="react_query.html#useQueryOnce" class="tsd-kind-icon">use<wbr>Query<wbr>Once</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="react_query.html#useSuspensedQuery" class="tsd-kind-icon">use<wbr>Suspensed<wbr>Query</a></li>
 							</ul>
 						</section>
 					</div>
@@ -137,6 +138,176 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="useSuspensedQuery" class="tsd-anchor"></a>
+					<h3>use<wbr>Suspensed<wbr>Query</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">use<wbr>Suspensed<wbr>Query&lt;TQueryFnData, TError, TData, TQueryKey&gt;<span class="tsd-signature-symbol">(</span>queryKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TQueryKey</span>, queryFn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QueryFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SuspendedUseQueryOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TError</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;enabled&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SuccessQueryResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">use<wbr>Suspensed<wbr>Query&lt;TQueryFnData, TError, TData, TQueryKey&gt;<span class="tsd-signature-symbol">(</span>queryKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TQueryKey</span>, queryFn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QueryFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SuspendedUseQueryOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TError</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;enabled&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>enabled<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SuccessQueryResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">use<wbr>Suspensed<wbr>Query&lt;TQueryFnData, TError, TData, TQueryKey&gt;<span class="tsd-signature-symbol">(</span>queryKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TQueryKey</span>, queryFn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QueryFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SuspendedUseQueryOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TError</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;enabled&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IdleQueryResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">use<wbr>Suspensed<wbr>Query&lt;TQueryFnData, TError, TData, TQueryKey&gt;<span class="tsd-signature-symbol">(</span>queryKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TQueryKey</span>, queryFn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QueryFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SuspendedUseQueryOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TError</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QueryResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/quotabook/quotalab-frontend-libraries/blob/main/packages/react-query/src/hooks/useSuspensedQuery.ts#L46">packages/react-query/src/hooks/useSuspensedQuery.ts:46</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>pending 중에는 Suspense 상태를 유지하는 useQuery 훅입니다. <code>suspense: true</code> 옵션을 사용해도 T | undefined 타입을 반환하는 useQuery와 다르게 T 타입만을 반환합니다.</p>
+								</div>
+								<p>반드시 Suspense 컴포넌트와 함께 사용해주세요.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-tsx"><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">Foo</span><span style="color: #000000">() {</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">data</span><span style="color: #000000"> } = </span><span style="color: #795E26">useSuspensedQuery</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;fooData&#039;</span><span style="color: #000000">, </span><span style="color: #001080">fetchFoo</span><span style="color: #000000">); </span><span style="color: #008000">// data는 T로 평가됩니다.</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #800000">&lt;&gt;</span><span style="color: #000000">data.name</span><span style="color: #800000">&lt;/&gt;</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #008000">// withSSRSuspense HoC와 함께 사용할 수도 있습니다.</span>
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #AF00DB">default</span><span style="color: #000000"> </span><span style="color: #795E26">withSSRSuspense</span><span style="color: #000000">(</span><span style="color: #001080">Foo</span><span style="color: #000000">, { </span><span style="color: #001080">fallback:</span><span style="color: #000000"> </span><span style="color: #0000FF">null</span><span style="color: #000000"> });</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TQueryFnData = <span class="tsd-signature-type">unknown</span></h4>
+								</li>
+								<li>
+									<h4>TError = <span class="tsd-signature-type">unknown</span></h4>
+								</li>
+								<li>
+									<h4>TData = <span class="tsd-signature-type">TQueryFnData</span></h4>
+								</li>
+								<li>
+									<h4>TQueryKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QueryKey</span> = <span class="tsd-signature-type">QueryKey</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>queryKey: <span class="tsd-signature-type">TQueryKey</span></h5>
+								</li>
+								<li>
+									<h5>queryFn: <span class="tsd-signature-type">QueryFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SuspendedUseQueryOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TError</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;enabled&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">SuccessQueryResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/quotabook/quotalab-frontend-libraries/blob/main/packages/react-query/src/hooks/useSuspensedQuery.ts#L56">packages/react-query/src/hooks/useSuspensedQuery.ts:56</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TQueryFnData = <span class="tsd-signature-type">unknown</span></h4>
+								</li>
+								<li>
+									<h4>TError = <span class="tsd-signature-type">unknown</span></h4>
+								</li>
+								<li>
+									<h4>TData = <span class="tsd-signature-type">TQueryFnData</span></h4>
+								</li>
+								<li>
+									<h4>TQueryKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QueryKey</span> = <span class="tsd-signature-type">QueryKey</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>queryKey: <span class="tsd-signature-type">TQueryKey</span></h5>
+								</li>
+								<li>
+									<h5>queryFn: <span class="tsd-signature-type">QueryFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SuspendedUseQueryOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TError</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;enabled&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>enabled<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">SuccessQueryResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/quotabook/quotalab-frontend-libraries/blob/main/packages/react-query/src/hooks/useSuspensedQuery.ts#L68">packages/react-query/src/hooks/useSuspensedQuery.ts:68</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TQueryFnData = <span class="tsd-signature-type">unknown</span></h4>
+								</li>
+								<li>
+									<h4>TError = <span class="tsd-signature-type">unknown</span></h4>
+								</li>
+								<li>
+									<h4>TData = <span class="tsd-signature-type">TQueryFnData</span></h4>
+								</li>
+								<li>
+									<h4>TQueryKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QueryKey</span> = <span class="tsd-signature-type">QueryKey</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>queryKey: <span class="tsd-signature-type">TQueryKey</span></h5>
+								</li>
+								<li>
+									<h5>queryFn: <span class="tsd-signature-type">QueryFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SuspendedUseQueryOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TError</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;enabled&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> }</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IdleQueryResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/quotabook/quotalab-frontend-libraries/blob/main/packages/react-query/src/hooks/useSuspensedQuery.ts#L80">packages/react-query/src/hooks/useSuspensedQuery.ts:80</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TQueryFnData = <span class="tsd-signature-type">unknown</span></h4>
+								</li>
+								<li>
+									<h4>TError = <span class="tsd-signature-type">unknown</span></h4>
+								</li>
+								<li>
+									<h4>TData = <span class="tsd-signature-type">TQueryFnData</span></h4>
+								</li>
+								<li>
+									<h4>TQueryKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QueryKey</span> = <span class="tsd-signature-type">QueryKey</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>queryKey: <span class="tsd-signature-type">TQueryKey</span></h5>
+								</li>
+								<li>
+									<h5>queryFn: <span class="tsd-signature-type">QueryFunction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-type">SuspendedUseQueryOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TQueryFnData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TError</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TQueryKey</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">QueryResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -175,6 +346,9 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="react_query.html#useQueryOnce" class="tsd-kind-icon">use<wbr>Query<wbr>Once</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="react_query.html#useSuspensedQuery" class="tsd-kind-icon">use<wbr>Suspensed<wbr>Query</a>
 					</li>
 				</ul>
 			</nav>
